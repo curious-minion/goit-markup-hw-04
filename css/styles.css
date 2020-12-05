@@ -41,16 +41,15 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+a {
   margin: 0;
 }
 
 /* logo header+footer*/
 
 .logo.header a {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-flex;
 }
 
 .header-nav {
@@ -103,6 +102,8 @@ p {
 
 .site-nav a {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-color);
   font-weight: 500;
@@ -117,10 +118,17 @@ p {
 }
 
 .contact-info a {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .site-nav .link:hover,
@@ -129,6 +137,7 @@ p {
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-info .item + .item {
@@ -138,11 +147,21 @@ p {
 /* hero */
 .hero {
   display: block;
-  background-color: var(--footer-hero-bgr);
+  background: var(--footer-hero-bgr);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Overlay.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
