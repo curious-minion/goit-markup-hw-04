@@ -8,6 +8,7 @@
   --footer-hero-bgr: #2f303a;
   --head-border-line: #ececec;
   --projects-border-line: #eeeeee;
+  --icons-color: #afb1b8;
 }
 
 .container {
@@ -137,7 +138,6 @@ a {
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .contact-info .item + .item {
@@ -277,6 +277,16 @@ img {
   margin-right: 0;
 }
 
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+
+  margin-bottom: 30px;
+  background: var(--team-button-bgr);
+  border-radius: 4px;
+}
 /* Team */
 .team {
   padding-top: 94px;
@@ -297,8 +307,8 @@ img {
   min-width: 76px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-align: center;
 }
 
@@ -313,10 +323,78 @@ img {
 .job {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
+}
+
+.social-links.footer .link {
+  color: var(--basic-white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links .link:hover {
+  color: var(--basic-white);
+  background: var(--accent-color);
+}
+
+.icon-socials {
+  fill: currentColor;
+}
+
+/* Clients */
+
+.clients .title {
+  padding-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clients-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+
+  color: var(--icons-color);
+}
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.icon-clients {
+  fill: currentColor;
 }
 
 /* Footer */
 footer {
+  display: flex;
   margin-bottom: 0;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -346,6 +424,27 @@ footer {
 .address a:hover,
 .address a:focus {
   color: var(--accent-color);
+}
+.container.network {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-us {
+  display: block;
+  justify-content: center;
+
+  margin-left: 93px;
+  width: 206px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.social-links.footer {
+  display: flex;
+  margin-top: 20px;
 }
 
 /* Portfolio */
